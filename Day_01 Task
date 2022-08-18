@@ -1,0 +1,38 @@
+HTTP 1.1 
+
+    1.  3 TCP connection
+    2.  No maximize perceived and actual page load speed
+    3.  No weighted prioritization
+    4. sends single streams of data 
+    5. several requests & responses are merged in a single connection
+    6. blocked all other requests until the response does not receive
+    7. textual format
+    8. requests resource Inlining for use getting multiple pages
+    9. compresses data by itself
+
+
+
+
+
+HTTP 2
+    1. 1 TCP connection
+    2. maximize perceived and actual page load speed
+    3. weighted prioritization
+    4. sends several streams of data 
+    5. several requests & responses are merged in a multiple connection
+    6. No block for all other requests until the response does not receive
+    7. Binary format
+    8. PUSH frame by server that collects all multiple pages 
+    9. HPACK for data compression
+
+
+
+Ecmascript objects
+    1. It contains the key and value pair (properties of object)
+    2. Syntax:
+        Let book={
+            Author='shakesphere';
+            Name='quotes';
+            publisher='MG hill'
+
+        }
